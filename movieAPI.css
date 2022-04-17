@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: rgb(99, 37, 37);
+}
+
+.header{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.search{
+    font-size: 20px;
+    margin: 10px 10px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: rgb(71, 71, 71);
+    border: 4px solid rgb(99, 37, 37);
+}
+
+.search:focus{
+    background-color: rgb(99, 37, 37);
+    color: white;
+}
+
+.main{
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.main .movie{
+    width: 281px;
+    background: linear-gradient(75deg, gray, black);
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 5px 5px 14px 3px rgba(0,0,0,0.61);
+    overflow: hidden;
+    margin: 10px 10px;
+}
+.main .movie .title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main .movie .title .rating{
+    background-color: rgb(99, 37, 37);
+    padding: 3px 10px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 9px -1px #000000;
+    font-weight: 800;
+}
+
+.main .movie .title .rating.green{
+    color: rgb(71, 202, 71);
+}
+
+.main .movie .title .rating.orange{
+    color: rgb(255, 166, 1);
+}
+
+.main .movie .title .rating.black{
+    color: rgb(221, 12, 12);
+}
+
+.main .movie .info{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.main .movie:hover .info{
+    transform: translateY(0%);
+}
+
+.main .movie .info h3{
+    color: rgb(99, 37, 37);
+    font-weight: 900;
+}
+
+.popular,
+.best_dramas,
+.in_theatres,
+.kids_movies,
+.best_from_2010{
+    background-color: rgb(99, 37, 37);
+    padding: 5px 12px;
+    font-size: 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    border: 5px double white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.popular:hover,
+.best_dramas:hover,
+.in_theatres:hover,
+.kids_movies:hover,
+.best_from_2010:hover{
+    color: rgb(99, 37, 37);
+    background-color: white;
+    border: 5px double rgb(99, 37, 37);
+}
+
+
+
+
